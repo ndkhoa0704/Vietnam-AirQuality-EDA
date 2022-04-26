@@ -1,4 +1,4 @@
-AQI index,Station name,Dominent pollutant,CO,Dew,Humidity,NO2,O3,Pressure,PM10,PM2.5,SO2,Temperature,Wind,Data Time S,Longitude,Latitude,Status
+AQI index,Station name,Dominent pollutant,CO,Dew,Humidity,NO2,O3,Pressure,PM10,PM2.5,SO2,Temperature,Wind,Data Time S,Latitude,Longitude,Status
 102.0,"Ho Chi Minh City US Consulate, Vietnam (Lãnh sự quán Hoa Kỳ, Hồ Chí Minh)",pm25,5.0,22.9,83.0,10.0,6.5,1009.0,42.0,102.0,5.0,27.0,3.6,2021-01-21 19:00:00,10.782978,106.700711,Unhealthy for sensitive groups
 281.0,"Hanoi US Embassy, Vietnam (Đại sứ quán Mỹ, Hà Nội)",pm25,0.3,22.9,77.0,8.7,0.9,1015.0,42.0,281.0,2.1,18.0,1.5,2021-01-21 20:00:00,21.0215063,105.8188748,Very unhealthy
 36.0,"Gia Lai/phường Thống Nhất - Pleiku, Vietnam",pm25,3.0,22.9,60.2,6.0,9.0,923.7,29.0,36.0,1.0,24.3,1.0,2021-01-21 20:00:00,13.998599,107.996482,Good
