@@ -14,8 +14,8 @@ df = df.drop(columns=['Station ID', 'Url', 'Status', 'Alert level', 'Data Time T
 df = df.replace('-', np.nan)
 # Split location to long and lat
 t = df['Location'].str.split(',')
-df['Longitude'] = t.apply(lambda x: x[0])
-df['Latitude'] = t.apply(lambda x: x[1])
+df['Latitude'] = t.apply(lambda x: x[0])
+df['Longitude'] = t.apply(lambda x: x[1])
 df = df.drop(columns='Location')
 del t
 # Conver data type 
