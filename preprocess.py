@@ -1,6 +1,8 @@
 # %%
 import pandas as pd
 import numpy as np
+import matplotlib.pyplot as plt
+from collections import Counter
 
 # %%
 df = pd.read_csv('./data/historical_air_quality_2021_en.csv')
@@ -8,10 +10,21 @@ df = pd.read_csv('./data/historical_air_quality_2021_en.csv')
 # %%
 # Remove empty rows
 df = df[df.sum(axis=1) != 0]
-# Remove unused columns
-df = df.drop(columns=['Station ID', 'Url', 'Status', 'Alert level', 'Data Time Tz'])
 # Replace unwanted characters
 df = df.replace('-', np.nan)
+
+# %%
+# Remove unused columns
+t = df.isna().sum()
+to_be_removed = ['Station ID', 'Url', 'Status', 'Alert level', 'Data Time Tz']
+## Select columns whose number of nan is higher than the number of data
+for i in t.index:
+    if t[i] > df.shape[0]/2:
+        to_be_removed.append(i)
+df = df.drop(columns=to_be_removed)
+del t
+
+# %%
 # Split location to long and lat
 t = df['Location'].str.split(',')
 df['Latitude'] = t.apply(lambda x: x[0])
@@ -21,8 +34,8 @@ del t
 # Conver data type 
 df['Pressure'] = df['Pressure'].str.replace(',', '')
 features = ['AQI index', 'CO', 'Dew', 
-'Humidity', 'NO2', 'O3', 'Pressure', 
-'PM10', 'PM2.5', 'SO2', 'Temperature', 'Wind',
+'Humidity', 'NO2', 'Pressure', 
+'PM10', 'PM2.5', 'Temperature', 'Wind',
 'Longitude', 'Latitude']
 df[features] = df[features].astype('float64')
 # Fill nan by median
@@ -34,7 +47,6 @@ df = df[df['Dominent pollutant'] != 'aqi']
 df = df[~df['Dominent pollutant'].isna()]
 
 # %%
-# Add status
 def status(x):
     if 0 <= x <= 50:
         return 'Good'
