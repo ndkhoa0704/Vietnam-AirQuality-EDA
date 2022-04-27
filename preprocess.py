@@ -6,7 +6,7 @@ df = pd.read_csv('./data/historical_air_quality_2021_en.csv')
 
 # %%
 # Remove empty rows
-df = df[df.sum(axis=1) != 0]
+df = df.dropna(axis=0, how='all')
 # Replace unwanted characters
 df = df.replace('-', np.nan)
 
