@@ -59,8 +59,5 @@ def status(x):
         return 'Hazardous'
 df['Status'] = df['AQI index'].apply(status)
 
-# %%
-df.to_excel('./data/processed.xlsx', index=False)
-df.to_csv('./data/processed.csv', index=False)
 
-pd.read_csv('./data/processed.csv')
+df.to_csv('./data/processed.csv', index=False)

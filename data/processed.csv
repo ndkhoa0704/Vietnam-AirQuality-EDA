@@ -1323,7 +1323,7 @@ AQI index,Station name,Dominent pollutant,CO,Dew,Humidity,NO2,Pressure,PM10,PM2.
 60.0,"Hà Nội/Tòa nhà quản lý Hồ Thành Công, Vietnam",pm10,6.0,28.0,79.0,18.0,1000.0,60.0,59.0,32.0,1.0,2021-07-31 08:00:00,21.02022,105.81232,Moderate
 63.0,"Hà Nội/UBND P.Tây Mỗ, Nam Từ Liêm, Vietnam",pm25,5.0,28.0,79.0,13.0,1000.0,43.0,63.0,32.0,1.0,2021-07-31 08:00:00,21.00577,105.74842,Moderate
 68.0,"Hà Nội/36A Phạm Văn Đồng, Vietnam",pm25,3.0,28.0,79.0,17.0,1000.0,58.0,68.0,32.0,1.0,2021-07-31 08:00:00,21.05121,105.78232,Moderate
-65.0,"Hà Nội/Mầm non Kim Liên, Vietnam",pm25,5.0,28.0,79.0,10.0,1000.0,46.0,65.0,32.0,1.0,2021-07-31T08:00:00+07:00,21.0072,105.83572,Moderate
+65.0,"Hà Nội/Mầm non Kim Liên, Vietnam",pm25,5.0,28.0,79.0,10.0,1000.0,46.0,65.0,32.0,1.0,2021-07-31 08:00:00,21.0072,105.83572,Moderate
 134.0,"Cao Bằng/Trạm khí TTQT, Vietnam",pm25,5.0,26.6,96.5,1.0,973.8,108.0,134.0,27.2,2.0,2021-07-31 10:00:00,22.6782,106.245,Unhealthy for sensitive groups
 59.0,"Ho Chi Minh City US Consulate, Vietnam (Lãnh sự quán Hoa Kỳ, Hồ Chí Minh)",pm25,5.0,26.5,85.5,10.0,1008.5,42.0,59.0,29.0,6.6,2021-08-02 08:00:00,10.782978,106.700711,Moderate
 72.0,"Hanoi US Embassy, Vietnam (Đại sứ quán Mỹ, Hà Nội)",pm25,0.1,27.0,88.0,7.8,1000.0,42.0,72.0,29.0,1.5,2021-08-02 08:00:00,21.0215063,105.8188748,Moderate
