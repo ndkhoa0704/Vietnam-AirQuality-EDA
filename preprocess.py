@@ -1,9 +1,6 @@
 # %%
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
-from collections import Counter
-
 # %%
 df = pd.read_csv('./data/historical_air_quality_2021_en.csv')
 
@@ -63,6 +60,7 @@ def status(x):
 df['Status'] = df['AQI index'].apply(status)
 
 # %%
+df.to_excel('./data/processed.xlsx', index=False)
 df.to_csv('./data/processed.csv', index=False)
 
-
+pd.read_csv('./data/processed.csv')
